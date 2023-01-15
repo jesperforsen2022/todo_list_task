@@ -63,7 +63,7 @@ const App = () => {
         <Tasks filtered={filtered} tasks={tasks} onDelete=
         {deleteTask} onToggle={toggleReminder} onDeleteAll={deleteAllListItem} />
         ) : (
-          'No Tasks To Show'
+          'Du har inget att göra!'
         )}
 
       </div>
