@@ -8,7 +8,7 @@ const Tasks = ({ filtered, onDelete, onToggle, onDeleteAll }) => {
         />
         ))}
         <button className="btn" onClick={onDeleteAll}>
-            Ränsa Listan
+            Rensa Listan
           </button>
     </>
   )

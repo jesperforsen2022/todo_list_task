@@ -53,11 +53,6 @@ const App = () => {
       <div className='container'>
         <Header onAdd={() => setShowAddTask (!showAddTask)} showAdd={showAddTask} />
         {showAddTask && <AddTask onAdd={addTask} />}        
-        <SearchTask 
-        placeholder="sök..."
-        search={search}
-        handleSearchChange={handleSearchChange}
-               />
         
         {tasks.length > 0 ? (
         <Tasks filtered={filtered} tasks={tasks} onDelete=
@@ -65,6 +60,11 @@ const App = () => {
         ) : (
           'Du har inget att göra!'
         )}
+        <SearchTask 
+        placeholder="sök..."
+        search={search}
+        handleSearchChange={handleSearchChange}
+               />
 
       </div>
       );
